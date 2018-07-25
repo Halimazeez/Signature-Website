@@ -12,7 +12,6 @@ class FooterButton extends Component {
         <Button className={classes.Button} variant="outlined">
           {this.props.buttontext}
         </Button>
-        {this.props.children}
       </div>
     );
   }
@@ -23,24 +22,15 @@ FooterButton.propTypes = {
 };
 
 const styles = theme => ({
-  sectionFooter: {
-    display: 'inline-block',
-    marginTop: 15
-  },
-  subheader: {
-    maxWidth: 600,
-    textAlign: 'center',
-    margin: 'auto'
-  },
+  sectionFooter: {},
   Button: {
-    padding: '.75rem 3rem',
+    padding: '.5rem 3rem',
     border: '2px solid transparent',
     borderRadius: '.75rem',
     color: '#3a93f0',
     borderColor: '#3a93f0',
     fontWeight: 400,
     fontSize: '1.15rem',
-    display: 'inline-block',
     lineHeight: '1.5',
     '&:hover': {
       color: '#fff',

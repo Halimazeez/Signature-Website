@@ -13,6 +13,11 @@ export const data = {
     'We work with a wide range of clients, from multinationals to startups.',
     'Our customers include:'
   ],
+  buttons: [
+    "Let's talk",
+    'Get in touch',
+    'Give us a call'
+  ],
   info: [
     {
       p1: 'Chris oversees the commercial side of Signature.',

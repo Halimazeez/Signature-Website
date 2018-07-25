@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 class Section extends Component {
   render() {
     const { classes } = this.props;
-    return <div className={classes.sectionMain}>{this.props.children}</div>;
+    return <div className={classes.container}>{this.props.children}</div>;
   }
 }
 
@@ -16,21 +16,20 @@ Section.propTypes = {
 };
 
 const styles = theme => ({
-  sectionMain: {
-    padding: '0 15px',
+  container: {
+    padding: '4rem 15px',
     textAlign: 'center',
     width: '100%',
     margin: 'auto',
     minWidth: '320px',
-
-    '@media screen and (min-width: 992px)': {
-      maxWidth: 960
-    },
     '@media screen and (min-width: 768px)': {
       maxWidth: 720
     },
     '@media screen and (min-width: 576px)': {
       maxWidth: 540
+    },
+    '@media screen and (min-width: 992px)': {
+      maxWidth: 960
     },
     '@media screen and (min-width: 1200px)': {
       maxWidth: 1140

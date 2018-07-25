@@ -8,9 +8,9 @@ class SectionHeader extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.headerContainer}>
-        <Typography className={classes.header} variant="title">
-          {this.props.title}
+      <section>
+        <Typography className={classes.header} variant="title" color="white">
+          {this.props.header}
         </Typography>
 
         <Typography
@@ -20,7 +20,7 @@ class SectionHeader extends Component {
         >
           {this.props.subheader}
         </Typography>
-      </div>
+      </section>
     );
   }
 }
@@ -28,7 +28,13 @@ class SectionHeader extends Component {
 SectionHeader.propTypes = {
   classes: PropTypes.object.isRequired,
   title: PropTypes.string,
-  subheader: PropTypes.string
+  subheader: PropTypes.string,
+  header: PropTypes.string,
+  color: PropTypes.string
+};
+
+SectionHeader.defaultPropTypes = {
+  color: '#fff'
 };
 
 const styles = theme => ({
@@ -46,21 +52,16 @@ const styles = theme => ({
   subheader: {
     fontWeight: 300,
     textAlign: 'center',
-    margin: 'auto',
-    textTransform: 'uppercase',
     marginBottom: theme.spacing.unit * 7,
     fontSize: '1.1rem',
-    '@media screen and (min-width: 992px)': {
-      fontSize: '1.575rem'
+    '@media screen and (min-width: 576px)': {
+      fontSize: '1.25rem'
     },
     '@media screen and (min-width: 768px)': {
       fontSize: '1.41rem'
     },
-    '@media screen and (min-width: 576px)': {
-      fontSize: '1.25rem'
-    },
-    headerContainer: {
-      margin: 'auto'
+    '@media screen and (min-width: 992px)': {
+      fontSize: '1.575rem'
     }
   }
 });
