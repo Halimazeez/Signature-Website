@@ -1,21 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import PropTypes from 'prop-types';
+import People from './containers/People';
+import { withStyles } from '@material-ui/core/styles';
 
 class App extends Component {
   render() {
+    const { classes } = this.props;
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className={classes.root}>
+        <section className={classes.peopleSection}>
+          <People />
+        </section>
       </div>
     );
   }
 }
 
-export default App;
+const styles = theme => ({
+  root: {
+    background: '#3a93f0'
+  },
+  peopleSection: {
+    background: '#fff'
+  }
+});
+
+export default withStyles(styles)(App);
