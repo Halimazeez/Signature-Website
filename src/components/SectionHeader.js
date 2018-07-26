@@ -9,14 +9,18 @@ class SectionHeader extends Component {
     const { classes } = this.props;
     return (
       <section>
-        <Typography className={classes.header} variant="title" color="white">
+        <Typography
+          className={classes.header}
+          variant="title"
+          color={this.props.color}
+        >
           {this.props.header}
         </Typography>
 
         <Typography
           className={classes.subheader}
           variant="subheading"
-          color="inherit"
+          color={this.props.color}
         >
           {this.props.subheader}
         </Typography>
@@ -34,7 +38,7 @@ SectionHeader.propTypes = {
 };
 
 SectionHeader.defaultPropTypes = {
-  color: '#fff'
+  color: 'primary'
 };
 
 const styles = theme => ({
@@ -42,10 +46,11 @@ const styles = theme => ({
     fontWeight: 700,
     fontSize: '1.65rem',
     marginBottom: theme.spacing.unit * 3,
-    '@media screen and (min-width: 768px)': {
+    color: '#4e4e4e',
+    '@media screen and (min-width: 768px )': {
       fontSize: '2.4rem'
     },
-    '@media screen and (min-width: 576px)': {
+    '@media screen and (min-width: 576px and max-width: 576px)': {
       fontSize: '1.9rem'
     }
   },
@@ -54,10 +59,10 @@ const styles = theme => ({
     textAlign: 'center',
     marginBottom: theme.spacing.unit * 7,
     fontSize: '1.1rem',
-    '@media screen and (min-width: 576px)': {
+    '@media screen and (min-width: 576px and max-width: 768px)': {
       fontSize: '1.25rem'
     },
-    '@media screen and (min-width: 768px)': {
+    '@media screen and (min-width: 768px and max-width: 992px)': {
       fontSize: '1.41rem'
     },
     '@media screen and (min-width: 992px)': {

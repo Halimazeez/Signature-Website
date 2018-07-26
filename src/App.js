@@ -7,6 +7,7 @@ import Intro from './containers/Intro';
 import Solutions from './containers/Solutions';
 import Contact from './containers/Contact';
 import Customers from './containers/Customers';
+import Footer from './containers/Footer';
 import theme from './theme';
 
 import { MuiThemeProvider } from '@material-ui/core/styles';
@@ -33,6 +34,9 @@ class App extends Component {
           <section className={classes.customersSection}>
             <Customers />
           </section>
+          <section className={classes.footerSection}>
+            <Footer />
+          </section>
         </div>
       </MuiThemeProvider>
     );
@@ -46,7 +50,6 @@ const styles = theme => ({
   introSection: {
     background: '#fff'
   },
-  solutionsSection: {},
   peopleSection: {
     background: '#fff'
   },

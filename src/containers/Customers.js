@@ -13,7 +13,7 @@ class Customers extends Component {
       <Section>
         <SectionHeader
           header={data.headers[4]}
-          subheaders={data.subheaders[3]}
+          subheader={data.subheaders[2]}
         />
       </Section>
     );

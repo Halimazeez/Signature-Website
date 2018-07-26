@@ -12,10 +12,7 @@ class People extends Component {
     const { classes } = this.props;
     return (
       <Section>
-        <SectionHeader
-          header={data.headers[2]}
-          subheader={data.subheaders[2]}
-        />
+        <SectionHeader header={data.headers[2]} />
         <FooterButton buttontext={data.buttons[2]} />
       </Section>
     );

@@ -13,11 +13,7 @@ export const data = {
     'We work with a wide range of clients, from multinationals to startups.',
     'Our customers include:'
   ],
-  buttons: [
-    "Let's talk",
-    'Get in touch',
-    'Give us a call'
-  ],
+  buttons: ["Let's talk", 'Get in touch', 'Give us a call'],
   info: [
     {
       p1: 'Chris oversees the commercial side of Signature.',
@@ -42,5 +38,6 @@ export const data = {
       p3:
         "John ensures that our clients' strategic visions are translated into appropriate training tactics that can be executed with precision and exceed expectations."
     }
-  ]
+  ],
+  footer: 'Copyright © 2018 Signature Learning & Development Inc.'
 };
