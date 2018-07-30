@@ -14,6 +14,7 @@ class Solutions extends Component {
         <SectionHeader
           header={data.headers[1]}
           subheader={data.subheaders[1]}
+          color="secondary"
         />
       </Section>
     );

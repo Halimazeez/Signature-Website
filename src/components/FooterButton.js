@@ -24,6 +24,7 @@ FooterButton.propTypes = {
 const styles = theme => ({
   sectionFooter: {},
   Button: {
+    textTransform: 'initial',
     padding: '.5rem 3rem',
     border: '2px solid transparent',
     borderRadius: '.75rem',
@@ -39,7 +40,7 @@ const styles = theme => ({
     '@media screen and (min-width: 768px)': {
       fontSize: '1.3rem'
     },
-    '@media screen and (min-width: 576px and max-width: 768px)': {
+    '@media screen and (min-width: 576px) and (max-width: 768px)': {
       fontSize: '1.2rem'
     }
   }

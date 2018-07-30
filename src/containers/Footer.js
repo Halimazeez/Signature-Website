@@ -9,7 +9,7 @@ class Footer extends Component {
     const { classes } = this.props;
     return (
       <Section>
-        <Typography>{data.footer}</Typography>
+        <Typography className={classes.copyright}>{data.footer}</Typography>
       </Section>
     );
   }
@@ -17,7 +17,8 @@ class Footer extends Component {
 
 const styles = theme => ({
   copyright: {
-    color: 'rgba(255, 255, 255, 0.65)'
+    color: 'rgba(255, 255, 255, 0.65) !IMPORTANT',
+    fontSize: '1rem'
   }
 });
 

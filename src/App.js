@@ -8,6 +8,7 @@ import Solutions from './containers/Solutions';
 import Contact from './containers/Contact';
 import Customers from './containers/Customers';
 import Footer from './containers/Footer';
+import Header from './containers/Header';
 import theme from './theme';
 
 import { MuiThemeProvider } from '@material-ui/core/styles';
@@ -54,6 +55,9 @@ const styles = theme => ({
     background: '#fff'
   },
   customersSection: {
+    background: '#fff'
+  },
+  headerSection: {
     background: '#fff'
   }
 });

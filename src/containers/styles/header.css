@@ -1,0 +1,56 @@
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 30px;
+  z-index: 9999;
+}
+
+.img {
+  height: 55px;
+}
+
+.containerb {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.hero {
+  min-height: 320px;
+  height: 75vh;
+}
+.player {
+  height: 100%;
+  width: 100%;
+}
+
+.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .containera {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .containera {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .containera {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .containera {
+    max-width: 540px;
+  }
+}

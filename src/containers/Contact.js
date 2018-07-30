@@ -11,7 +11,7 @@ class Contact extends Component {
     const { classes } = this.props;
     return (
       <Section>
-        <SectionHeader header={data.headers[3]} />
+        <SectionHeader header={data.headers[3]} color="secondary" />
       </Section>
     );
   }

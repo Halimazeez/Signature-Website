@@ -1,0 +1,32 @@
+.header {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  color: inherit;
+}
+
+.p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    font-size: 1.77rem;
+  }
+  .p {
+    font-size: 1.23rem;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .header {
+    font-size: 1.5rem;
+  }
+
+  .p {
+    font-size: 1.17rem;
+  }
+}

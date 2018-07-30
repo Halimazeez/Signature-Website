@@ -1,0 +1,29 @@
+.container {
+  padding: 4rem 15px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  min-width: 320px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}

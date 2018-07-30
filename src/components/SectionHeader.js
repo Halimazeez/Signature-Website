@@ -44,13 +44,12 @@ SectionHeader.defaultPropTypes = {
 const styles = theme => ({
   header: {
     fontWeight: 700,
-    fontSize: '1.65rem',
+    fontSize: '1.9rem',
     marginBottom: theme.spacing.unit * 3,
-    color: '#4e4e4e',
     '@media screen and (min-width: 768px )': {
       fontSize: '2.4rem'
     },
-    '@media screen and (min-width: 576px and max-width: 576px)': {
+    '@media screen and (min-width: 576px) and (max-width: 768px)': {
       fontSize: '1.9rem'
     }
   },
@@ -59,10 +58,10 @@ const styles = theme => ({
     textAlign: 'center',
     marginBottom: theme.spacing.unit * 7,
     fontSize: '1.1rem',
-    '@media screen and (min-width: 576px and max-width: 768px)': {
+    '@media screen and (min-width: 576px) and (max-width: 768px)': {
       fontSize: '1.25rem'
     },
-    '@media screen and (min-width: 768px and max-width: 992px)': {
+    '@media screen and (min-width: 768px) and (max-width: 992px)': {
       fontSize: '1.41rem'
     },
     '@media screen and (min-width: 992px)': {

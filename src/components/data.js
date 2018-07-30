@@ -1,5 +1,10 @@
 export const data = {
   names: ['Chris Booth', 'Tim Couper', 'John Worobey'],
+  imgs: [
+    'http://www.signaturelnd.com/static/img/chrisbooth.png',
+    'http://www.signaturelnd.com/static/img/timcouper.png',
+    'http://www.signaturelnd.com/static/img/johnworobey.png'
+  ],
   headers: [
     'Complete Learning Solutions',
     'Our Solutions',
